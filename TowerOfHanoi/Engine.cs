@@ -9,18 +9,24 @@ public class Engine
 
     Stick[] towers = {
         new Stick() {
-            Position = new(-20, 0, 0)
+            Position = new(-20, 0, 0),
         },
-        new Stick() {
+        new Stick()
+        {
             Position = new(0, 0, 0)
         },
-        new Stick() {
+        new Stick()
+        {
             Position = new(20, 0, 0)
         },
     };
 
     public Engine()
     {
+        towers[0].ToroidStack.Push(new Toroid(8, Color.RED));
+        towers[0].ToroidStack.Push(new Toroid(6, Color.ORANGE));
+        towers[0].ToroidStack.Push(new Toroid(4, Color.YELLOW));
+        towers[0].ToroidStack.Push(new Toroid(2, Color.GREEN));
         camera = new(new(-50, 50, -50), new(0, 0, 0), new(0, 1, 0), 70, CameraProjection.CAMERA_PERSPECTIVE);
     }
 
