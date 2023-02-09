@@ -76,7 +76,7 @@ public class Engine
             Raylib.ClearBackground(Color.WHITE);
 
             Raylib.DrawText("You Win!", 200, 200, 64, Color.BLUE);
-            Raylib.DrawText("Press Escape to exit", 200, 200, 64, Color.BLUE);
+            Raylib.DrawText("Press Escape to exit", 100, 400, 64, Color.BLUE);
 
             if (Raylib.IsKeyPressed(KeyboardKey.KEY_ESCAPE)) displayWin = false;
 
