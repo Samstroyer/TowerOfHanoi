@@ -40,7 +40,7 @@ public class Engine
         towers[0].ToroidStack.Push(new Toroid(6, Color.ORANGE));
         towers[0].ToroidStack.Push(new Toroid(4, Color.YELLOW));
         towers[0].ToroidStack.Push(new Toroid(2, Color.GREEN));
-        camera = new(new(50, 50, 50), new(0, 0, 0), new(0, 1, 0), 70, CameraProjection.CAMERA_PERSPECTIVE);
+        camera = new(new(30, 30, 30), new(0, -10, 0), new(0, 1, 0), 70, CameraProjection.CAMERA_PERSPECTIVE);
     }
 
     public void Run()

@@ -35,10 +35,10 @@ public class Stick
 
         Toroid t = ToroidStack.Peek();
 
-        float yOffset = (float)Math.Sin(bounce) * 1;
+        float yOffset = (float)Math.Sin(bounce) * 3;
 
         Raylib.DrawCircle3D(Position - new Vector3(0, yOffset - 14, 0), t.Size, new(1, 0, 0), -90f, t.C);
-        bounce += 0.001;
+        bounce += 0.005;
     }
 
     public Toroid TransferToroid()
